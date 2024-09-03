@@ -58,5 +58,12 @@
             where id = #{id}
         </set>
     </update>
+    <select id="getBycategoryId" resultType="com.sky.entity.Setmeal">
+        select * from setmeal where category_id = #{categoryId}
+        order by create_time desc
+    </select>
+    <select id="getDishBySetmealId" resultType="com.sky.vo.DishItemVO">
+        select s.name,s.copies,d.image,d.description from setmeal_dish s left join sky_take_out.dish d on d.id = s.dish_id  where setmeal_id = #{id}
 
+    </select>
 </mapper>
