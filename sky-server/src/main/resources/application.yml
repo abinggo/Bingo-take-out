@@ -52,3 +52,10 @@ sky:
   wechat:
     appid: ${sky.wechat.appid}
     secret: ${sky.wechat.secret}
+#    mchid: ${sky.wechat.mchid} #商户号
+#    mchSerialNo: ${sky.wechat.mchSerialNo} #商户APi证书的证书序列号
+#    privateKeyFilePath: ${sky.wechat.privateKeyFilePath} #商户私钥文件
+#    apiV3Key: ${sky.wechat.apiV3Key} #证书解密的密钥
+#    weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath} #平台证书
+#    notifyUrl: ${sky.wechat.notifyUrl} #支付成功回掉地址
+#    refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
